@@ -66,6 +66,9 @@ function showMap(ATMlist) {
     navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 30000 });
     function onSuccess(position) {
 
+        var lat=position.coords.latitude;
+        var long=position.coords.longitude;
+
         var div = document.getElementById("map");
 
         map = plugin.google.maps.Map.getMap(div);
@@ -73,6 +76,11 @@ function showMap(ATMlist) {
         map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
 
         function onMapReady() {
+
+            map.moveCamera({
+                target: {lat: lat, lng: long},
+                zoom: 13
+            });
 
             for (var i = 0; i < ATMlist.length; i++) {
                 var pos = { "lat": ATMlist[i].Lat, "lng": ATMlist[i].Long };
