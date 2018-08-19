@@ -1,0 +1,37 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps@^2.3.11"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyASZaNC3WUXfTadEBs34JGx9GEDeb9Zfz8",
+      "API_KEY_FOR_IOS": "AIzaSyASZaNC3WUXfTadEBs34JGx9GEDeb9Zfz8"
+    }
+  },
+  "cordova-sqlite-storage": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-sqlite-storage"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
